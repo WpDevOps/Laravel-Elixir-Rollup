@@ -1,7 +1,7 @@
 import fs from 'fs';
 import gulp from 'gulp';
 import {extend} from 'underscore';
-import Elixir from 'laravel-elixir';
+import Elixir from '@wpdevops/elixir';
 
 let buffer, inject, rollup, buble, vue, source, replace, commonjs, nodeResolve, multiEntry, cache;
 
@@ -101,7 +101,7 @@ class RollupTask extends Elixir.Task {
                 cache: cache,
                 sourceMap: true,
                 format: 'iife',
-                moduleName: 'LaravelElixirBundle',
+                moduleName: 'WpDevOpsElixirBundle',
                 plugins: plugins
             }, this.rollupConfig, this.options)
         )

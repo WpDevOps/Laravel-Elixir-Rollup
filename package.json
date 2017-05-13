@@ -1,18 +1,19 @@
 {
-  "name": "laravel-elixir-rollup-official",
-  "version": "1.1.0",
-  "description": "Laravel Elixir Rollup integration.",
+  "name": "@wpdevops/elixir-rollup",
+  "version": "1.0.0",
+  "description": "WpDevOps Elixir Rollup integration.",
   "main": "dist/index.js",
   "scripts": {
     "compile": "babel --presets=es2015 -d dist src",
     "prepublish": "npm run compile"
   },
   "keywords": [
-    "laravel",
+    "wpdevops",
     "elixir",
-    "rollup"
+    "rollup",
+    "wordpress"
   ],
-  "author": "Jeffrey Way",
+  "author": "Sehmi Perez",
   "license": "MIT",
   "dependencies": {
     "buble": "^0.14.0",
